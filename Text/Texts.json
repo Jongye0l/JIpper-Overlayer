@@ -8,7 +8,7 @@
     "DisableUpdate": false,
     "Font": "C:\\OverlayerFont\\MAPLESTORY_OTF_BOLD.OTF",
     "Name": "_Combo Shadow",
-    "PlayingText": "<color=#{CustomColorRangePlus(Combo,0,1000,000000,000000)}><size={MovingManN(%{Multiple:75}%,%{Multiple:75}%,500,%{Multiple:75}%,1,OutExpo)}>{Combo()}</size>\r\n</color>Combo",
+    "PlayingText": "<color=#{CustomColorRangePlus(Combo,0,1000,000000,000000)}><size={MovingManN(%{Multiple:75}%,%{Multiple:35}%,500,%{Multiple:75}%,1,OutExpo)}>{Combo()}</size>\r\n</color>Combo",
     "NotPlayingText": "",
     "Position": {
       "x": 0.5,
