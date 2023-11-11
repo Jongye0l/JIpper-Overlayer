@@ -219,6 +219,8 @@ echo �ܡܡۡۡۡۡۡۡۡ�
 echo.
 echo ------------------------------
 
+if not exist "%file%\Mods\Overlayer\Scripts" mkdir "%file%\Mods\Overlayer\Scripts"
+
 set filepath=uidumpfile
 echo UmVnaXN0ZXJUYWcoIkN1c3RvbUNvbG9yUmFuZ2VQbHVzIiwgZnVuY3Rpb24gKFJB>%filepath%
 echo V2Z1bmMsIHJhbmdlMSwgcmFuZ2UyLCBjb2xvcjEsIGNvbG9yMiwgZWFzZVJBVykg>>%filepath%
