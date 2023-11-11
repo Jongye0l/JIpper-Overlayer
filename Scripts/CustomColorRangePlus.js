@@ -1,9 +1,14 @@
 RegisterTag("CustomColorRangePlus", function (RAWfunc, range1, range2, color1, color2, easeRAW) {
   let func = eval(RAWfunc + "(8)");
+  range1 = range1.replace(", ", "");
+  range2 = range2.replace(", ", "");
+  color1 = color1.replace(", ", "");
+  color2 = color2.replace(", ", "");
+  easeRAW = easeRAW.replace(", ", "");
   if (isNaN(func)==0) {
-    let numValue = parseFloat(eval(func).toString().replace(/"/g, ""));
-    let numRange1 = parseFloat(range1.replace(/"/g, ""));
-    let numRange2 = parseFloat(range2.replace(/"/g, ""));
+    let numValue = parseFloat(eval(func).toString());
+    let numRange1 = parseFloat(range1);
+    let numRange2 = parseFloat(range2);
     if (numValue < numRange1){numValue = numRange1;}
     if (numValue > numRange2){numValue = numRange2;}
     let INease = zeroandone(numValue,numRange1,numRange2);
@@ -44,11 +49,12 @@ RegisterTag("CustomColorRangePlus", function (RAWfunc, range1, range2, color1, c
     let red = Math.round((1 - ease) * parseInt(color1.substring(0, 2), 16) + ease * parseInt(color2.substring(0, 2), 16));
     let green = Math.round((1 - ease) * parseInt(color1.substring(2, 4), 16) + ease * parseInt(color2.substring(2, 4), 16));
     let blue = Math.round((1 - ease) * parseInt(color1.substring(4, 6), 16) + ease * parseInt(color2.substring(4, 6), 16));
-    return (red.toString(16)).padStart(2, "0") + (green.toString(16)).padStart(2, "0") + (blue.toString(16)).padStart(2, "0");
+    return red.toString(16).padStart(2, "0") + green.toString(16).padStart(2, "0") + blue.toString(16).padStart(2, "0");
   } else {
     return "FFFFFF";
   }
 }, true)
+
 function zeroandone(nowV, minV, maxV) {
   return (Math.min(Math.max(nowV, minV), maxV) - minV) / (maxV - minV);
 }

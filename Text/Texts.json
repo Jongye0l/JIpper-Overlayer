@@ -8,7 +8,7 @@
     "DisableUpdate": false,
     "Font": "C:\\OverlayerFont\\MAPLESTORY_OTF_BOLD.OTF",
     "Name": "_Combo Shadow",
-    "PlayingText": "<color=#{CustomColorRangePlus(Combo,0,1000,000000,000000)}><size={MovingManN(%{Multiple:75}%,%{Multiple:35}%,500,%{Multiple:75}%,1,OutExpo)}>{Combo()}</size>\r\n</color>Combo",
+	"PlayingText": "<color=#000000><size={MovingManN(%{Multiple:75}%, %{Multiple:35}%, 500, %{Multiple:75}%, 1, OutExpo)}>{Combo()}</size>\r\n</color>Combo",
     "NotPlayingText": "",
     "Position": {
       "x": 0.5,
@@ -86,7 +86,7 @@
     "DisableUpdate": false,
     "Font": "C:\\OverlayerFont\\MAPLESTORY_OTF_BOLD.OTF",
     "Name": "BPM",
-    "PlayingText": "TBPM | <color=#{CustomColorRangePlus(TileBpm,0,8000,FFFFFF,FF00FF)}>{TileBpm(2)}</color>\n<voffset=-0.6em>CBPM | <color=#{CustomColorRangePlus(CurBpm,0,8000,FFFFFF,FF00FF)}>{CurBpm(2)}</color> \r\n<voffset=-0.6em>KPS | <color=#{CustomColorRangePlus(RecKPS,1,32.3333,FFFFFF,FF00FF)}>{RecKPS()}</color>",
+    "PlayingText": "TBPM | <color=#{CustomColorRangePlus(TileBpm, 0, 8000, FFFFFF, FF00FF)}>{TileBpm(2)}</color>\n<voffset=-0.6em>CBPM | <color=#{CustomColorRangePlus(CurBpm, 0, 8000, FFFFFF, FF00FF)}>{CurBpm(2)}</color> \r\n<voffset=-0.6em>KPS | <color=#{CustomColorRangePlus(CurBpm, 0, 8000, FFFFFF, FF00FF)}>{RecKPS()}</color>",
     "NotPlayingText": "",
     "Position": {
       "x": 0.991667,
@@ -164,7 +164,7 @@
     "DisableUpdate": false,
     "Font": "C:\\OverlayerFont\\MAPLESTORY_OTF_BOLD.OTF",
     "Name": "Combo",
-    "PlayingText": "<color=#{CustomColorRangePlus(Combo,0,1000,dfb5ff,b759ff)}><size={MovingManN(%{Multiple:75}%,%{Multiple:30}%,500,%{Multiple:75}%,1,OutExpo)}>{Combo()}</size>\r\n</color>Combo",
+    "PlayingText": "<color=#{CustomColorRangePlus(Combo, 0, 1000, dfb5ff, b759ff)}><size={MovingManN(%{Multiple:75}%, %{Multiple:30}%, 500, %{Multiple:75}%, 1, OutExpo)}>{Combo()}</size>\r\n</color>Combo",
     "NotPlayingText": "",
     "Position": {
       "x": 0.5,
@@ -320,7 +320,7 @@
     "DisableUpdate": false,
     "Font": "C:\\OverlayerFont\\MAPLESTORY_OTF_BOLD.OTF",
     "Name": "Progress",
-    "PlayingText": "Progress | <color=#{CustomColorRangePlus(Progress,0,100,FFFFFF,dfb5ff)}>{Progress(2)}%</color>\r\n<voffset=-0.6em>Accuracy | <color=#{CustomColorRangePlus(XAccuracy,98,100,FF00FF,FFFFFF)}>{FullXAccuracyJ}</color>\r\n<voffset=-0.6em>음악시간 | {CurMinute}m:{CurSecond}s",
+    "PlayingText": "Progress | <color=#{CustomColorRangePlus(Progress, 0, 100, FFFFFF, dfb5ff)}>{Progress(2)}%</color>\r\n<voffset=-0.6em>Accuracy | <color=#{CustomColorRangePlus(XAccuracy, 98, 100, FF00FF, FFFFFF)}>{FullXAccuracyJ}</color>\r\n<voffset=-0.6em>음악시간 | {CurMinute}m:{CurSecond}s",
     "NotPlayingText": "",
     "Position": {
       "x": 0.008333,

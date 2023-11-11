@@ -1,5 +1,10 @@
 RegisterTag("MovingManN", function (StartSizeRAW, MaxSizeRAW, SpeedRAW, SubSizeRAW, ChangeRAW, easeRAW) {
-    let Func = Combo(); let StartSize = 30; let MaxSize = 80; let Speed = 800; let SubSize = 30; //65번줄과 해당 줄의 함수를 바꿀 수 있습니다.
+	MaxSizeRAW = MaxSizeRAW.replace(", ", "");
+	SpeedRAW = SpeedRAW.replace(", ", "");
+	SubSizeRAW = SubSizeRAW.replace(", ", "");
+	ChangeRAW = ChangeRAW.replace(", ", "");
+	easeRAW = easeRAW.replace(", ", "");
+    let Func = Combo(); let StartSize = 30; let MaxSize = 80; let Speed = 800; let SubSize = 30;
     if(isNaN(parseFloat(StartSizeRAW))==0){StartSize = StartSizeRAW;}
     if(isNaN(parseFloat(SubSizeRAW))==0){SubSize = SubSizeRAW;}
     if(isNaN(parseFloat(MaxSizeRAW))==0){MaxSize = MaxSizeRAW;}
