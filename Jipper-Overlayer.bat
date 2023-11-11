@@ -1,3 +1,5 @@
+@echo off
+
 REM @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 REM
 REM Copyright (C) 2023 Jongyeol.
@@ -5,9 +7,8 @@ REM All rights reserved.
 REM
 REM @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-@echo off
-
 del /f /q "Update Completer.bat"
+cls
 
 set version=1.0.0
 
@@ -150,9 +151,9 @@ if not exist "%file%\Mods\Overlayer" (
 	echo.
 	echo ------------------------------
 	set /p a=실행할 작업을 선택해주세요 : 
-	if a%a% == 1 (
+	if a%a% == a1 (
 		goto ApplyOverlayer
-	) else if a%a% == 3 (
+	) else if a%a% == a3 (
 		exit
 	) else (
 		goto CheckOverlayerFile
