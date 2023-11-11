@@ -184,6 +184,8 @@ PowerShell -Command "& {Add-Type -AssemblyName System.IO.Compression.FileSystem;
 
 del /f /q Overlayer.zip
 
+goto CheckOverlayerFile
+
 :ApplyUI
 
 title UI Àû¿ë(0/10)
