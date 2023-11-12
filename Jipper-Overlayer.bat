@@ -10,7 +10,7 @@ REM @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 del /f /q "Update Completer.bat"
 cls
 
-set version=1.0.1
+set version=1.0.2
 
 title 얼불춤 파일 체크중...
 if exist "C:\Program Files (x86)\Steam\steamapps\common\A Dance of Fire and Ice" (
@@ -38,8 +38,7 @@ if not %errorlevel% equ 0 (
 	echo 버전이 최신버전이 아니므로 업데이트를 진행합니다.
 	echo.
 	echo ------------------------------
-	FOR /F %%i IN ('TYPE "version"') DO SET "downloadVersion=%%i"
-	PowerShell -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://github.com/Jongye0l/Jipper-Overlayer/releases/download/v%downloadVersion%/Jipper-Overlayer.bat', 'batchfile') }"
+	PowerShell -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://github.com/Jongye0l/JIpper-Overlayer/raw/main/Jipper-Overlayer.bat', 'batchfile') }"
 	echo @echo off>"Update Completer.bat"
 	echo del /f /q Jipper-Overlayer.bat>>"Update Completer.bat"
 	echo move batchfile Jipper-Overlayer.bat>>"Update Completer.bat"
