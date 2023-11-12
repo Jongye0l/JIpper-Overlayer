@@ -403,7 +403,7 @@ echo �ܡܡܡܡܡܡۡۡۡ�
 echo.
 echo ------------------------------
 
-echo UmVnaXN0ZXJUYWcoIk1vdmluZ01hbk4iLCBmdW5jdGlvbiAoU3RhcnRTaXplUkFX>>%filepath%
+echo UmVnaXN0ZXJUYWcoIk1vdmluZ01hbk4iLCBmdW5jdGlvbiAoU3RhcnRTaXplUkFX>%filepath%
 echo LCBNYXhTaXplUkFXLCBTcGVlZFJBVywgU3ViU2l6ZVJBVywgQ2hhbmdlUkFXLCBl>>%filepath%
 echo YXNlUkFXKSB7DQoJTWF4U2l6ZVJBVyA9IE1heFNpemVSQVcucmVwbGFjZSgiLCAi>>%filepath%
 echo LCAiIik7DQoJU3BlZWRSQVcgPSBTcGVlZFJBVy5yZXBsYWNlKCIsICIsICIiKTsN>>%filepath%
