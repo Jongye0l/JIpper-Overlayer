@@ -61,19 +61,22 @@ cls
 echo ------------------------------
 echo.
 echo 지퍼 오버레이어 설정기
-echo 적용시 자신의 오버레이터 데이터가 날라갑니다.
-echo 데이터를 미리 백업해두세요.
+echo 적용시 자신의 오버레이터 데이터가 날라갑니다. 데이터를 미리 백업해두세요.
+echo 적용을 할 때 얼불춤이 자동으로 꺼집니다.
 echo.
 echo.
 echo Version : %version%
 echo.
-echo Developeent : Jongyeol
+echo Developer : Jongyeol
 echo └ Youtube : https://www.youtube.com/@Jongyeol
 echo └ Discord : jongyeol_
 echo.
-echo Contributors : Jipper
+echo Design : Jipper
 echo └ Youtube : https://www.youtube.com/@jipper1214
 echo └ Discord : jipper1214
+echo.
+echo Script : 끼툿
+echo └ Discord : kkitut
 echo.
 echo SouceCode : https://github.com/Jongye0l/Jipper-Overlayer
 echo.
@@ -196,6 +199,7 @@ echo UI를 적용중입니다.
 echo ○○○○○○○○○○
 echo.
 echo ------------------------------
+taskkill /f /im "A Dance of Fire and Ice.exe"
 if not exist "C:\OverlayerFont\MAPLESTORY_OTF_BOLD.OTF" (
 	PowerShell -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://jongyeol.click/MAPLESTORY_OTF_BOLD.OTF', 'MAPLESTORY_OTF_BOLD.OTF') }"
 
@@ -207,6 +211,7 @@ if not exist "C:\OverlayerFont\MAPLESTORY_OTF_BOLD.OTF" (
 	echo ●○○○○○○○○○
 	echo.
 	echo ------------------------------
+	mkdir "C:\OverlayerFont"
 	move "MAPLESTORY_OTF_BOLD.OTF" "C:\OverlayerFont"
 )
 

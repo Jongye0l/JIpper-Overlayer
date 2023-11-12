@@ -24,4 +24,5 @@
 * Windows Powershell 5.1.22621.2428
 ---
 ### 기여자 Contributors
-* Jipper - 데이터 제공
+* Jipper - 디자인
+* 끼툿 - 스크립트

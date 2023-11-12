@@ -22,7 +22,7 @@
       "magnitude": 1.05393171,
       "sqrMagnitude": 1.110772
     },
-    "FontSize": 40.0,
+    "FontSize": %{Multiple:40}%,
     "Alignment": 514,
     "TextColor": {
       "topLeft": {
@@ -178,7 +178,7 @@
       "magnitude": 1.058826,
       "sqrMagnitude": 1.12111235
     },
-    "FontSize": 40.0,
+    "FontSize": %{Multiple:40}%,
     "Alignment": 514,
     "TextColor": {
       "topLeft": {
