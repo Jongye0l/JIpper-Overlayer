@@ -28,26 +28,26 @@ goto VersionCheck
 
 :VersionCheck
 
-PowerShell -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://jongyeol.kr/JipperOverlayer/version', 'version') }"
-type "version" | findstr /C:"%version%" >nul
-
-if not %errorlevel% equ 0 (
-	cls
-	echo ------------------------------
-	echo.
-	echo 버전이 최신버전이 아니므로 업데이트를 진행합니다.
-	echo.
-	echo ------------------------------
-	PowerShell -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://github.com/Jongye0l/JIpper-Overlayer/raw/main/Jipper-Overlayer.bat', 'batchfile') }"
-	echo @echo off>"Update Completer.bat"
-	echo del /f /q Jipper-Overlayer.bat>>"Update Completer.bat"
-	echo move batchfile Jipper-Overlayer.bat>>"Update Completer.bat"
-	echo "Jipper-Overlayer">>"Update Completer.bat"
-	del /f /q version
-	"Update Completer.bat"
-)
-
-del /f /q version
+REM PowerShell -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://jongyeol.kr/JipperOverlayer/version', 'version') }"
+REM type "version" | findstr /C:"%version%" >nul
+REM 
+REM if not %errorlevel% equ 0 (
+REM 	cls
+REM 	echo ------------------------------
+REM 	echo.
+REM 	echo 버전이 최신버전이 아니므로 업데이트를 진행합니다.
+REM 	echo.
+REM 	echo ------------------------------
+REM 	PowerShell -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://github.com/Jongye0l/JIpper-Overlayer/raw/main/Jipper-Overlayer.bat', 'batchfile') }"
+REM 	echo @echo off>"Update Completer.bat"
+REM 	echo del /f /q Jipper-Overlayer.bat>>"Update Completer.bat"
+REM 	echo move batchfile Jipper-Overlayer.bat>>"Update Completer.bat"
+REM 	echo "Jipper-Overlayer">>"Update Completer.bat"
+REM 	del /f /q version
+REM 	"Update Completer.bat"
+REM )
+REM 
+REM del /f /q version
 goto CheckModFile
 
 
