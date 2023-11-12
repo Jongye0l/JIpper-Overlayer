@@ -191,7 +191,7 @@ goto CheckOverlayerFile
 
 :ApplyUI
 
-title UI 적용(0/10)
+title UI 적용(0/12)
 cls
 echo ------------------------------
 echo.
@@ -203,24 +203,24 @@ taskkill /f /im "A Dance of Fire and Ice.exe"
 if not exist "C:\OverlayerFont\MAPLESTORY_OTF_BOLD.OTF" (
 	PowerShell -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://jongyeol.click/MAPLESTORY_OTF_BOLD.OTF', 'MAPLESTORY_OTF_BOLD.OTF') }"
 
-	title UI 적용(1/10)
+	title UI 적용(1/12)
 	cls
 	echo ------------------------------
 	echo.
 	echo UI를 적용중입니다.
-	echo ●○○○○○○○○○
+	echo ●○○○○○○○○○○○
 	echo.
 	echo ------------------------------
 	mkdir "C:\OverlayerFont"
 	move "MAPLESTORY_OTF_BOLD.OTF" "C:\OverlayerFont"
 )
 
-title UI 적용(2/10)
+title UI 적용(2/12)
 cls
 echo ------------------------------
 echo.
 echo UI를 적용중입니다.
-echo ●●○○○○○○○○
+echo ●●○○○○○○○○○○
 echo.
 echo ------------------------------
 
@@ -361,24 +361,185 @@ echo T3V0Qm91bmNlKHQpIHtpZiAodCA8IDAuNSkgcmV0dXJuIGVhc2VJbkJvdW5jZSh0>>%filepath
 echo ICogMikgKiAwLjU7cmV0dXJuIGVhc2VPdXRCb3VuY2UodCAqIDIgLSAxKSAqIDAu>>%filepath%
 echo NSArIDAuNTt9>>%filepath%
 
-title UI 적용(3/10)
+title UI 적용(3/12)
 cls
 echo ------------------------------
 echo.
 echo UI를 적용중입니다.
-echo ●●●○○○○○○○
+echo ●●●○○○○○○○○○
 echo.
 echo ------------------------------
 
 del "%file%\Mods\Overlayer\Scripts\CustomColorRangePlus.js"
 certutil -decode %filepath% "%file%\Mods\Overlayer\Scripts\CustomColorRangePlus.js"
 
-title UI 적용(4/10)
+title UI 적용(4/12)
 cls
 echo ------------------------------
 echo.
 echo UI를 적용중입니다.
-echo ●●●●○○○○○○
+echo ●●○○○○○○○○○○
+echo.
+echo ------------------------------
+
+if not exist "%file%\Mods\Overlayer\Scripts" mkdir "%file%\Mods\Overlayer\Scripts"
+
+set filepath=uidumpfile
+echo UmVnaXN0ZXJUYWcoIkN1c3RvbUNvbG9yUmFuZ2VQbHVzRiIsIGZ1bmN0aW9uIChS>%filepath%
+echo QVdmdW5jLCByYW5nZTEsIHJhbmdlMiwgY29sb3IxLCBjb2xvcjIsIGVhc2VSQVcs>>%filepath%
+echo IEZhKSB7DQogIGxldCBmdW5jID0gZXZhbChSQVdmdW5jICsgIig4KSIpOw0KICBy>>%filepath%
+echo YW5nZTEgPSByYW5nZTEucmVwbGFjZSgiLCAiLCAiIik7DQogIHJhbmdlMiA9IHJh>>%filepath%
+echo bmdlMi5yZXBsYWNlKCIsICIsICIiKTsNCiAgY29sb3IxID0gY29sb3IxLnJlcGxh>>%filepath%
+echo Y2UoIiwgIiwgIiIpOw0KICBjb2xvcjIgPSBjb2xvcjIucmVwbGFjZSgiLCAiLCAi>>%filepath%
+echo Iik7DQogIGVhc2VSQVcgPSBlYXNlUkFXLnJlcGxhY2UoIiwgIiwgIiIpOw0KICBG>>%filepath%
+echo YSA9IEZhLnJlcGxhY2UoIiwgIiwgIiIpOw0KICBpZiAoaXNOYU4oZnVuYyk9PTAp>>%filepath%
+echo IHsNCiAgICBpZihGYSA9PSAxKXtpZiggZnVuYyA9PSAxMDApe3JldHVybiAiRkZE>>%filepath%
+echo QTAwIn19DQogICAgbGV0IG51bVZhbHVlID0gcGFyc2VGbG9hdChldmFsKGZ1bmMp>>%filepath%
+echo LnRvU3RyaW5nKCkpOw0KICAgIGxldCBudW1SYW5nZTEgPSBwYXJzZUZsb2F0KHJh>>%filepath%
+echo bmdlMSk7DQogICAgbGV0IG51bVJhbmdlMiA9IHBhcnNlRmxvYXQocmFuZ2UyKTsN>>%filepath%
+echo CiAgICBpZiAobnVtVmFsdWUgPCBudW1SYW5nZTEpe251bVZhbHVlID0gbnVtUmFu>>%filepath%
+echo Z2UxO30NCiAgICBpZiAobnVtVmFsdWUgPiBudW1SYW5nZTIpe251bVZhbHVlID0g>>%filepath%
+echo bnVtUmFuZ2UyO30NCiAgICBsZXQgSU5lYXNlID0gemVyb2FuZG9uZShudW1WYWx1>>%filepath%
+echo ZSxudW1SYW5nZTEsbnVtUmFuZ2UyKTsNCiAgICBsZXQgZWFzZSA9IElOZWFzZTsN>>%filepath%
+echo CiAgICBsZXQgZWFzZXN0ciA9IGVhc2VSQVcudG9TdHJpbmcoKS50b1VwcGVyQ2Fz>>%filepath%
+echo ZSgpOw0KICAgIGlmIChlYXNlc3RyID09ICJJTlNJTkUiKXtlYXNlID0gZWFzZUlu>>%filepath%
+echo U2luZShJTmVhc2UpO30NCiAgICBpZiAoZWFzZXN0ciA9PSAiT1VUU0lORSIpe2Vh>>%filepath%
+echo c2UgPSBlYXNlT3V0U2luZShJTmVhc2UpO30NCiAgICBpZiAoZWFzZXN0ciA9PSAi>>%filepath%
+echo SU5PVVRTSU5FIil7ZWFzZSA9IGVhc2VJbk91dFNpbmUoSU5lYXNlKTt9DQogICAg>>%filepath%
+echo aWYgKGVhc2VzdHIgPT0gIklOUVVBRCIpe2Vhc2UgPSBlYXNlSW5RdWFkKElOZWFz>>%filepath%
+echo ZSk7fQ0KICAgIGlmIChlYXNlc3RyID09ICJPVVRRVUFEIil7ZWFzZSA9IGVhc2VP>>%filepath%
+echo dXRRdWFkKElOZWFzZSk7fQ0KICAgIGlmIChlYXNlc3RyID09ICJJTk9VVFFVQUQi>>%filepath%
+echo KXtlYXNlID0gZWFzZUluT3V0UXVhZChJTmVhc2UpO30NCiAgICBpZiAoZWFzZXN0>>%filepath%
+echo ciA9PSAiSU5DVUJJQyIpe2Vhc2UgPSBlYXNlSW5DdWJpYyhJTmVhc2UpO30NCiAg>>%filepath%
+echo ICBpZiAoZWFzZXN0ciA9PSAiT1VUQ1VCSUMiKXtlYXNlID0gZWFzZU91dEN1Ymlj>>%filepath%
+echo KElOZWFzZSk7fQ0KICAgIGlmIChlYXNlc3RyID09ICJJTk9VVENVQklDIil7ZWFz>>%filepath%
+echo ZSA9IGVhc2VJbk91dEN1YmljKElOZWFzZSk7fQ0KICAgIGlmIChlYXNlc3RyID09>>%filepath%
+echo ICJJTlFVQU5UIil7ZWFzZSA9IGVhc2VJblF1YXJ0KElOZWFzZSk7fQ0KICAgIGlm>>%filepath%
+echo IChlYXNlc3RyID09ICJPVVRRVUFOVCIpe2Vhc2UgPSBlYXNlT3V0UXVhcnQoSU5l>>%filepath%
+echo YXNlKTt9DQogICAgaWYgKGVhc2VzdHIgPT0gIklOT1VUUVVBTlQiKXtlYXNlID0g>>%filepath%
+echo ZWFzZUluT3V0UXVhcnQoSU5lYXNlKTt9DQogICAgaWYgKGVhc2VzdHIgPT0gIklO>>%filepath%
+echo UVVJTlQiKXtlYXNlID0gZWFzZUluUXVpbnQoSU5lYXNlKTt9DQogICAgaWYgKGVh>>%filepath%
+echo c2VzdHIgPT0gIk9VVFFVSU5UIil7ZWFzZSA9IGVhc2VPdXRRdWludChJTmVhc2Up>>%filepath%
+echo O30NCiAgICBpZiAoZWFzZXN0ciA9PSAiSU5PVVRRVUlOVCIpe2Vhc2UgPSBlYXNl>>%filepath%
+echo SW5PdXRRdWludChJTmVhc2UpO30NCiAgICBpZiAoZWFzZXN0ciA9PSAiSU5FWFBP>>%filepath%
+echo Iil7ZWFzZSA9IGVhc2VJbkV4cG8oSU5lYXNlKTt9DQogICAgaWYgKGVhc2VzdHIg>>%filepath%
+echo PT0gIk9VVEVYUE8iKXtlYXNlID0gZWFzZU91dEV4cG8oSU5lYXNlKTt9DQogICAg>>%filepath%
+echo aWYgKGVhc2VzdHIgPT0gIklOT1VURVhQTyIpe2Vhc2UgPSBlYXNlSW5PdXRFeHBv>>%filepath%
+echo KElOZWFzZSk7fQ0KICAgIGlmIChlYXNlc3RyID09ICJJTkNJUkMiKXtlYXNlID0g>>%filepath%
+echo ZWFzZUluQ2lyYyhJTmVhc2UpO30NCiAgICBpZiAoZWFzZXN0ciA9PSAiT1VUQ0lS>>%filepath%
+echo QyIpe2Vhc2UgPSBlYXNlT3V0Q2lyYyhJTmVhc2UpO30NCiAgICBpZiAoZWFzZXN0>>%filepath%
+echo ciA9PSAiSU5PVVRDSVJDIil7ZWFzZSA9IGVhc2VJbk91dENpcmMoSU5lYXNlKTt9>>%filepath%
+echo DQogICAgaWYgKGVhc2VzdHIgPT0gIklOQkFDSyIpe2Vhc2UgPSBlYXNlSW5CYWNr>>%filepath%
+echo KElOZWFzZSk7fQ0KICAgIGlmIChlYXNlc3RyID09ICJPVVRCQUNLIil7ZWFzZSA9>>%filepath%
+echo IGVhc2VPdXRCYWNrKElOZWFzZSk7fQ0KICAgIGlmIChlYXNlc3RyID09ICJJTk9V>>%filepath%
+echo VEJBQ0siKXtlYXNlID0gZWFzZUluT3V0QmFjayhJTmVhc2UpO30NCiAgICBpZiAo>>%filepath%
+echo ZWFzZXN0ciA9PSAiSU5FTEFTVElDIil7ZWFzZSA9IGVhc2VJbkVsYXN0aWMoSU5l>>%filepath%
+echo YXNlKTt9DQogICAgaWYgKGVhc2VzdHIgPT0gIk9VVEVMQVNUSUMiKXtlYXNlID0g>>%filepath%
+echo ZWFzZU91dEVsYXN0aWMoSU5lYXNlKTt9DQogICAgaWYgKGVhc2VzdHIgPT0gIklO>>%filepath%
+echo T1VURUxBU1RJQyIpe2Vhc2UgPSBlYXNlSW5PdXRFbGFzdGljKElOZWFzZSk7fQ0K>>%filepath%
+echo ICAgIGlmIChlYXNlc3RyID09ICJJTkJPVU5DRSIpe2Vhc2UgPSBlYXNlSW5Cb3Vu>>%filepath%
+echo Y2UoSU5lYXNlKTt9DQogICAgaWYgKGVhc2VzdHIgPT0gIk9VVEJPVU5DRSIpe2Vh>>%filepath%
+echo c2UgPSBlYXNlT3V0Qm91bmNlKElOZWFzZSk7fQ0KICAgIGlmIChlYXNlc3RyID09>>%filepath%
+echo ICJJTk9VVEJPVU5DRSIpe2Vhc2UgPSBlYXNlSW5PdXRCb3VuY2UoSU5lYXNlKTt9>>%filepath%
+echo DQogICAgaWYgKGVhc2UgPCAwKXtlYXNlID0gMDt9DQogICAgaWYgKGVhc2UgPiAx>>%filepath%
+echo KXtlYXNlID0gMDt9DQogICAgbGV0IHJlZCA9IE1hdGgucm91bmQoKDEgLSBlYXNl>>%filepath%
+echo KSAqIHBhcnNlSW50KGNvbG9yMS5zdWJzdHJpbmcoMCwgMiksIDE2KSArIGVhc2Ug>>%filepath%
+echo KiBwYXJzZUludChjb2xvcjIuc3Vic3RyaW5nKDAsIDIpLCAxNikpOw0KICAgIGxl>>%filepath%
+echo dCBncmVlbiA9IE1hdGgucm91bmQoKDEgLSBlYXNlKSAqIHBhcnNlSW50KGNvbG9y>>%filepath%
+echo MS5zdWJzdHJpbmcoMiwgNCksIDE2KSArIGVhc2UgKiBwYXJzZUludChjb2xvcjIu>>%filepath%
+echo c3Vic3RyaW5nKDIsIDQpLCAxNikpOw0KICAgIGxldCBibHVlID0gTWF0aC5yb3Vu>>%filepath%
+echo ZCgoMSAtIGVhc2UpICogcGFyc2VJbnQoY29sb3IxLnN1YnN0cmluZyg0LCA2KSwg>>%filepath%
+echo MTYpICsgZWFzZSAqIHBhcnNlSW50KGNvbG9yMi5zdWJzdHJpbmcoNCwgNiksIDE2>>%filepath%
+echo KSk7DQogICAgcmV0dXJuIChyZWQudG9TdHJpbmcoMTYpKS5wYWRTdGFydCgyLCAi>>%filepath%
+echo MCIpICsgKGdyZWVuLnRvU3RyaW5nKDE2KSkucGFkU3RhcnQoMiwgIjAiKSArIChi>>%filepath%
+echo bHVlLnRvU3RyaW5nKDE2KSkucGFkU3RhcnQoMiwgIjAiKTsNCiAgfSBlbHNlIHsN>>%filepath%
+echo CiAgICByZXR1cm4gIkZGRkZGRiI7DQogIH0NCn0sIHRydWUpDQpmdW5jdGlvbiB6>>%filepath%
+echo ZXJvYW5kb25lKG5vd1YsIG1pblYsIG1heFYpIHsNCiAgcmV0dXJuIChNYXRoLm1p>>%filepath%
+echo bihNYXRoLm1heChub3dWLCBtaW5WKSwgbWF4VikgLSBtaW5WKSAvIChtYXhWIC0g>>%filepath%
+echo bWluVik7DQp9DQpmdW5jdGlvbiBlYXNlSW5TaW5lKHQpIHtyZXR1cm4gMSAtIE1h>>%filepath%
+echo dGguY29zKCh0ICogTWF0aC5QSSkgLyAyKTt9DQpmdW5jdGlvbiBlYXNlT3V0U2lu>>%filepath%
+echo ZSh0KSB7cmV0dXJuIE1hdGguc2luKCh0ICogTWF0aC5QSSkgLyAyKTt9DQpmdW5j>>%filepath%
+echo dGlvbiBlYXNlSW5PdXRTaW5lKHQpIHtyZXR1cm4gLShNYXRoLmNvcyhNYXRoLlBJ>>%filepath%
+echo ICogdCkgLSAxKSAvIDI7fQ0KZnVuY3Rpb24gZWFzZUluUXVhZCh0KSB7cmV0dXJu>>%filepath%
+echo IHQgKiB0O30NCmZ1bmN0aW9uIGVhc2VPdXRRdWFkKHQpIHtyZXR1cm4gMSAtICgx>>%filepath%
+echo IC0gdCkgKiAoMSAtIHQpO30NCmZ1bmN0aW9uIGVhc2VJbk91dFF1YWQodCkge3Jl>>%filepath%
+echo dHVybiB0IDwgMC41ID8gMiAqIHQgKiB0IDogMSAtIE1hdGgucG93KC0yICogdCAr>>%filepath%
+echo IDIsIDIpIC8gMjt9DQpmdW5jdGlvbiBlYXNlSW5DdWJpYyh0KSB7cmV0dXJuIHQg>>%filepath%
+echo KiB0ICogdDt9DQpmdW5jdGlvbiBlYXNlT3V0Q3ViaWModCkge3JldHVybiAxIC0g>>%filepath%
+echo TWF0aC5wb3coMSAtIHQsIDMpO30NCmZ1bmN0aW9uIGVhc2VJbk91dEN1YmljKHQp>>%filepath%
+echo IHtyZXR1cm4gdCA8IDAuNSA/IDQgKiB0ICogdCAqIHQgOiAxIC0gTWF0aC5wb3co>>%filepath%
+echo LTIgKiB0ICsgMiwgMykgLyAyO30NCmZ1bmN0aW9uIGVhc2VJblF1YXJ0KHQpIHty>>%filepath%
+echo ZXR1cm4gdCAqIHQgKiB0ICogdDt9DQpmdW5jdGlvbiBlYXNlT3V0UXVhcnQodCkg>>%filepath%
+echo e3JldHVybiAxIC0gTWF0aC5wb3coMSAtIHQsIDQpO30NCmZ1bmN0aW9uIGVhc2VJ>>%filepath%
+echo bk91dFF1YXJ0KHQpIHtyZXR1cm4gdCA8IDAuNSA/IDggKiB0ICogdCAqIHQgKiB0>>%filepath%
+echo IDogMSAtIE1hdGgucG93KC0yICogdCArIDIsIDQpIC8gMjt9DQpmdW5jdGlvbiBl>>%filepath%
+echo YXNlSW5RdWludCh0KSB7cmV0dXJuIHQgKiB0ICogdCAqIHQgKiB0O30NCmZ1bmN0>>%filepath%
+echo aW9uIGVhc2VPdXRRdWludCh0KSB7cmV0dXJuIDEgLSBNYXRoLnBvdygxIC0gdCwg>>%filepath%
+echo NSk7fQ0KZnVuY3Rpb24gZWFzZUluT3V0UXVpbnQodCkge3JldHVybiB0IDwgMC41>>%filepath%
+echo ID8gMTYgKiB0ICogdCAqIHQgKiB0ICogdCA6IDEgLSBNYXRoLnBvdygtMiAqIHQg>>%filepath%
+echo KyAyLCA1KSAvIDI7fQ0KZnVuY3Rpb24gZWFzZUluRXhwbyh0KSB7cmV0dXJuIHQg>>%filepath%
+echo PT09IDAgPyAwIDogTWF0aC5wb3coMiwgMTAgKiAodCAtIDEpKTt9DQpmdW5jdGlv>>%filepath%
+echo biBlYXNlT3V0RXhwbyh0KSB7cmV0dXJuIHQgPT09IDEgPyAxIDogMSAtIE1hdGgu>>%filepath%
+echo cG93KDIsIC0xMCAqIHQpO30NCmZ1bmN0aW9uIGVhc2VJbk91dEV4cG8odCkge2lm>>%filepath%
+echo ICh0ID09PSAwKSByZXR1cm4gMDtpZiAodCA9PT0gMSkgcmV0dXJuIDE7aWYgKHQg>>%filepath%
+echo PCAwLjUpe3JldHVybiAwLjUgKiBNYXRoLnBvdygyLCAyMCAqIHQgLSAxMCk7fWVs>>%filepath%
+echo c2V7cmV0dXJuIDEgLSAwLjUgKiBNYXRoLnBvdygyLCAtMjAgKiB0ICsgMTApO319>>%filepath%
+echo DQpmdW5jdGlvbiBlYXNlSW5DaXJjKHQpIHtyZXR1cm4gMSAtIE1hdGguc3FydCgx>>%filepath%
+echo IC0gdCAqIHQpO30NCmZ1bmN0aW9uIGVhc2VPdXRDaXJjKHQpIHtyZXR1cm4gTWF0>>%filepath%
+echo aC5zcXJ0KDEgLSAodCAtIDEpICogKHQgLSAxKSk7fQ0KZnVuY3Rpb24gZWFzZUlu>>%filepath%
+echo T3V0Q2lyYyh0KSB7aWYgKHQgPCAwLjUpIHtyZXR1cm4gMC41ICogKDEgLSBNYXRo>>%filepath%
+echo LnNxcnQoMSAtIDQgKiB0ICogdCkpO31lbHNle3JldHVybiAwLjUgKiAoTWF0aC5z>>%filepath%
+echo cXJ0KDEgLSAoMiAqIHQgLSAyKSAqICgyICogdCAtIDIpKSArIDEpO319DQpmdW5j>>%filepath%
+echo dGlvbiBlYXNlSW5CYWNrKHQsIHMgPSAxLjcwMTU4KSB7cmV0dXJuIHQgKiB0ICog>>%filepath%
+echo KChzICsgMSkgKiB0IC0gcyk7fQ0KZnVuY3Rpb24gZWFzZU91dEJhY2sodCwgcyA9>>%filepath%
+echo IDEuNzAxNTgpIHtyZXR1cm4gKHQgPSB0IC0gMSkgKiB0ICogKChzICsgMSkgKiB0>>%filepath%
+echo ICsgcykgKyAxO30NCmZ1bmN0aW9uIGVhc2VJbk91dEJhY2sodCwgcyA9IDEuNzAx>>%filepath%
+echo NTgpIHtpZiAoKHQgLz0gMC41KSA8IDEpIHJldHVybiAwLjUgKiAodCAqIHQgKiAo>>%filepath%
+echo KChzICo9IDEuNTI1KSArIDEpICogdCAtIHMpKTtyZXR1cm4gMC41ICogKCh0IC09>>%filepath%
+echo IDIpICogdCAqICgoKHMgKj0gMS41MjUpICsgMSkgKiB0ICsgcykgKyAyKTt9DQpm>>%filepath%
+echo dW5jdGlvbiBlYXNlSW5FbGFzdGljKHQpIHtpZiAodCA9PT0gMCkgcmV0dXJuIDA7>>%filepath%
+echo aWYgKHQgPT09IDEpIHJldHVybiAxO3JldHVybiAtTWF0aC5wb3coMiwgMTAgKiB0>>%filepath%
+echo IC0gMTApICogTWF0aC5zaW4oKHQgKiAxMCAtIDEwLjc1KSAqICgyICogTWF0aC5Q>>%filepath%
+echo SSkgLyAzKTt9DQpmdW5jdGlvbiBlYXNlT3V0RWxhc3RpYyh0KSB7aWYgKHQgPT09>>%filepath%
+echo IDApIHJldHVybiAwO2lmICh0ID09PSAxKSByZXR1cm4gMTtyZXR1cm4gTWF0aC5w>>%filepath%
+echo b3coMiwgLTEwICogdCkgKiBNYXRoLnNpbigodCAqIDEwIC0gMC43NSkgKiAoMiAq>>%filepath%
+echo IE1hdGguUEkpIC8gMykgKyAxO30NCmZ1bmN0aW9uIGVhc2VJbk91dEVsYXN0aWMo>>%filepath%
+echo dCkge2lmICh0ID09PSAwKSByZXR1cm4gMDtpZiAodCA9PT0gMSkgcmV0dXJuIDE7>>%filepath%
+echo dCAqPSAyO2lmICh0IDwgMSl7cmV0dXJuIC0wLjUgKiAoTWF0aC5wb3coMiwgMTAg>>%filepath%
+echo KiB0IC0gMTApICogTWF0aC5zaW4oKHQgKiAxMCAtIDEwLjc1KSAqICgyICogTWF0>>%filepath%
+echo aC5QSSkgLyAzKSk7fWVsc2V7cmV0dXJuIDAuNSAqIChNYXRoLnBvdygyLCAtMTAg>>%filepath%
+echo KiAodCAtIDEpKSAqIE1hdGguc2luKCh0ICogMTAgLSAxMC43NSkgKiAoMiAqIE1h>>%filepath%
+echo dGguUEkpIC8gMykpICsgMTt9fQ0KZnVuY3Rpb24gZWFzZUluQm91bmNlKHQpIHty>>%filepath%
+echo ZXR1cm4gMSAtIGVhc2VPdXRCb3VuY2UoMSAtIHQpO30NCmZ1bmN0aW9uIGVhc2VP>>%filepath%
+echo dXRCb3VuY2UodCkge2lmICh0IDwgKDEgLyAyLjc1KSkge3JldHVybiA3LjU2MjUg>>%filepath%
+echo KiB0ICogdDt9ZWxzZSBpZih0IDwgKDIgLyAyLjc1KSl7cmV0dXJuIDcuNTYyNSAq>>%filepath%
+echo ICh0IC09ICgxLjUgLyAyLjc1KSkgKiB0ICsgMC43NTt9ZWxzZSBpZih0IDwgKDIu>>%filepath%
+echo NSAvIDIuNzUpKXtyZXR1cm4gNy41NjI1ICogKHQgLT0gKDIuMjUgLyAyLjc1KSkg>>%filepath%
+echo KiB0ICsgMC45Mzc1O31lbHNle3JldHVybiA3LjU2MjUgKiAodCAtPSAoMi42MjUg>>%filepath%
+echo LyAyLjc1KSkgKiB0ICsgMC45ODQzNzU7fX0NCmZ1bmN0aW9uIGVhc2VJbk91dEJv>>%filepath%
+echo dW5jZSh0KSB7aWYgKHQgPCAwLjUpIHJldHVybiBlYXNlSW5Cb3VuY2UodCAqIDIp>>%filepath%
+echo ICogMC41O3JldHVybiBlYXNlT3V0Qm91bmNlKHQgKiAyIC0gMSkgKiAwLjUgKyAw>>%filepath%
+echo LjU7fQ==>>%filepath%
+
+
+title UI 적용(5/12)
+cls
+echo ------------------------------
+echo.
+echo UI를 적용중입니다.
+echo ●●●○○○○○○○○○
+echo.
+echo ------------------------------
+
+del "%file%\Mods\Overlayer\Scripts\CustomColorRangePlusF.js"
+certutil -decode %filepath% "%file%\Mods\Overlayer\Scripts\CustomColorRangePlusF.js"
+
+title UI 적용(6/12)
+cls
+echo ------------------------------
+echo.
+echo UI를 적용중입니다.
+echo ●●●●●●○○○○○○
 echo.
 echo ------------------------------
 
@@ -387,24 +548,24 @@ echo IGlmKFhBY2N1cmFjeSgpID09PSAxMDApe3JldHVybiAiPGNvbG9yPSNGRkRBMDA+>>%filepath
 echo IiArIFhBY2N1cmFjeSgyKSArICIlPC9jb2xvcj4ifQ0KICAgIGVsc2V7cmV0dXJu>>%filepath%
 echo IFhBY2N1cmFjeSgyKX0NCn0sIHRydWUpOw==>>%filepath%
 
-title UI 적용(5/10)
+title UI 적용(7/12)
 cls
 echo ------------------------------
 echo.
 echo UI를 적용중입니다.
-echo ●●●●●○○○○○
+echo ●●●●●●●○○○○○
 echo.
 echo ------------------------------
 
 del "%file%\Mods\Overlayer\Scripts\FullXAccuracy.js"
 certutil -decode %filepath% "%file%\Mods\Overlayer\Scripts\FullXAccuracy.js"
 
-title UI 적용(6/10)
+title UI 적용(8/12)
 cls
 echo ------------------------------
 echo.
 echo UI를 적용중입니다.
-echo ●●●●●●○○○○
+echo ●●●●●●●●○○○○
 echo.
 echo ------------------------------
 
@@ -545,47 +706,47 @@ echo bmN0aW9uIGVhc2VJbk91dEJvdW5jZSh0KSB7aWYgKHQgPCAwLjUpIHJldHVybiBl>>%filepath
 echo YXNlSW5Cb3VuY2UodCAqIDIpICogMC41O3JldHVybiBlYXNlT3V0Qm91bmNlKHQg>>%filepath%
 echo KiAyIC0gMSkgKiAwLjUgKyAwLjU7fQ==>>%filepath%
 
-title UI 적용(7/10)
+title UI 적용(9/12)
 cls
 echo ------------------------------
 echo.
 echo UI를 적용중입니다.
-echo ●●●●●●●○○○
+echo ●●●●●●●●●○○○
 echo.
 echo ------------------------------
 
 del "%file%\Mods\Overlayer\Scripts\MovingManN.js"
 certutil -decode %filepath% "%file%\Mods\Overlayer\Scripts\MovingManN.js"
 
-title UI 적용(8/10)
+title UI 적용(10/12)
 cls
 echo ------------------------------
 echo.
 echo UI를 적용중입니다.
-echo ●●●●●●●●○○
+echo ●●●●●●●●●●○○
 echo.
 echo ------------------------------
 
 PowerShell -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://jongyeol.click/JipperOverlayer/Texts/%scale%', 'Texts.json') }"
 
-title UI 적용(9/10)
+title UI 적용(11/12)
 cls
 echo ------------------------------
 echo.
 echo UI를 적용중입니다.
-echo ●●●●●●●●●○
+echo ●●●●●●●●●●●○
 echo.
 echo ------------------------------
 
 del "%file%\Mods\Overlayer\Texts.json"
 move "Texts.json" "%file%\Mods\Overlayer"
 
-title UI 적용(10/10)
+title UI 적용(12/12)
 cls
 echo ------------------------------
 echo.
 echo UI를 적용을 완료했습니다.
-echo ●●●●●●●●●●
+echo ●●●●●●●●●●●●
 echo.
 echo ------------------------------
 

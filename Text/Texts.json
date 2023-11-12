@@ -244,7 +244,7 @@
     "DisableUpdate": false,
     "Font": "C:\\OverlayerFont\\MAPLESTORY_OTF_BOLD.OTF",
     "Name": "Progress",
-    "PlayingText": "Progress | <color=#{CustomColorRangePlus(Progress, 0, 100, FFFFFF, dfb5ff)}>{Progress(2)}%</color>\r\n<voffset=-0.6em>Accuracy | <color=#{CustomColorRangePlus(XAccuracy, 98, 100, FF00FF, FFFFFF)}>{FullXAccuracyJ}</color>\r\n<voffset=-0.6em>음악시간 | {CurMinute}m:{CurSecond}s",
+    "PlayingText": "Progress | <color=#{CustomColorRangePlus(Progress, 0, 100, FFFFFF, dfb5ff)}>{Progress(2)}%</color>\r\n<voffset=-0.6em>XAccuracy | <color=#{CustomColorRangePlusF(XAccuracy, 98, 100, FF00FF, FFFFFF, Linear, 1)}>{XAccuracy}</color>\r\n<voffset=-0.6em>음악시간 | {CurMinute}m:{CurSecond}s",
     "NotPlayingText": "",
     "Position": {
       "x": 0.008333,
