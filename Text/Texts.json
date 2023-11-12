@@ -3,24 +3,24 @@
     "LineSpacing": -25.0,
     "LineSpacingAdjustment": 25.0,
     "Active": true,
-    "IsExpanded": false,
+    "IsExpanded": true,
     "Gradient": false,
     "DisableUpdate": false,
     "Font": "C:\\OverlayerFont\\MAPLESTORY_OTF_BOLD.OTF",
     "Name": "_Combo Shadow",
-	"PlayingText": "<color=#000000><size={MovingManN(%{Multiple:75}%, %{Multiple:35}%, 500, %{Multiple:75}%, 1, OutExpo)}>{Combo()}</size>\r\n</color>Combo",
+    "PlayingText": "<color=#000000><size={MovingManN(%{Multiple:75}%, %{Multiple:35}%, 500, %{Multiple:75}%, 1, OutExpo)}>{Combo()}</size>\r\n</color>Combo",
     "NotPlayingText": "",
     "Position": {
       "x": 0.5,
-      "y": 0.927778,
+      "y": 0.928,
       "normalized": {
-        "x": 0.474414051,
-        "y": 0.880301833,
+        "x": 0.4743261,
+        "y": 0.8803492,
         "magnitude": 1.0,
         "sqrMagnitude": 1.0
       },
-      "magnitude": 1.05393171,
-      "sqrMagnitude": 1.110772
+      "magnitude": 1.0541271,
+      "sqrMagnitude": 1.111184
     },
     "FontSize": %{Multiple:40}%,
     "Alignment": 514,
@@ -50,32 +50,13 @@
         "a": 255.0
       }
     },
-    "ShadowColor": {
-      "topLeft": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 0.0
-      },
-      "topRight": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 0.0
-      },
-      "bottomLeft": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 0.0
-      },
-      "bottomRight": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 0.0
-      }
-    }
+    "OutlineColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "OutlineWidth": 0.0
   },
   {
     "LineSpacing": -25.0,
@@ -128,32 +109,13 @@
         "a": 1.0
       }
     },
-    "ShadowColor": {
-      "topLeft": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 30.4
-      },
-      "topRight": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 30.4
-      },
-      "bottomLeft": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 30.4
-      },
-      "bottomRight": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 30.4
-      }
-    }
+    "OutlineColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "OutlineWidth": 0.1
   },
   {
     "LineSpacing": -25.0,
@@ -164,7 +126,7 @@
     "DisableUpdate": false,
     "Font": "C:\\OverlayerFont\\MAPLESTORY_OTF_BOLD.OTF",
     "Name": "Combo",
-    "PlayingText": "<color=#{CustomColorRangePlus(Combo, 0, 1000, dfb5ff, b759ff)}><size={MovingManN(%{Multiple:75}%, %{Multiple:30}%, 500, %{Multiple:75}%, 1, OutExpo)}>{Combo()}</size>\r\n</color>Combo",
+    "PlayingText": "<color=#{CustomColorRangePlus(Combo, 0, 1000, dfb5ff, b759ff)}><size={MovingManN(%{Multiple:78}%, %{Multiple:30}%, 500, %{Multiple:78}%, 1, OutExpo)}>{Combo()}</size>\r\n</color>Combo",
     "NotPlayingText": "",
     "Position": {
       "x": 0.5,
@@ -206,32 +168,13 @@
         "a": 1.0
       }
     },
-    "ShadowColor": {
-      "topLeft": {
-        "r": 10.0,
-        "g": 10.0,
-        "b": 10.0,
-        "a": 0.0
-      },
-      "topRight": {
-        "r": 10.0,
-        "g": 10.0,
-        "b": 10.0,
-        "a": 0.0
-      },
-      "bottomLeft": {
-        "r": 10.0,
-        "g": 10.0,
-        "b": 10.0,
-        "a": 0.0
-      },
-      "bottomRight": {
-        "r": 10.0,
-        "g": 10.0,
-        "b": 10.0,
-        "a": 0.0
-      }
-    }
+    "OutlineColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 0.0
+    },
+    "OutlineWidth": 0.1
   },
   {
     "LineSpacing": -25.0,
@@ -284,38 +227,19 @@
         "a": 1.0
       }
     },
-    "ShadowColor": {
-      "topLeft": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 10.4
-      },
-      "topRight": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 10.4
-      },
-      "bottomLeft": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 10.4
-      },
-      "bottomRight": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 10.4
-      }
-    }
+    "OutlineColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "OutlineWidth": 0.1
   },
   {
     "LineSpacing": -25.0,
     "LineSpacingAdjustment": 25.0,
     "Active": true,
-    "IsExpanded": true,
+    "IsExpanded": false,
     "Gradient": false,
     "DisableUpdate": false,
     "Font": "C:\\OverlayerFont\\MAPLESTORY_OTF_BOLD.OTF",
@@ -362,31 +286,12 @@
         "a": 1.0
       }
     },
-    "ShadowColor": {
-      "topLeft": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 30.4
-      },
-      "topRight": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 30.4
-      },
-      "bottomLeft": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 30.4
-      },
-      "bottomRight": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 30.4
-      }
-    }
+    "OutlineColor": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "OutlineWidth": 0.1
   }
 ]
