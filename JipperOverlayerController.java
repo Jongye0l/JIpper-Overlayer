@@ -37,4 +37,9 @@ public class JipperOverlayerController {
     public String version() throws IOException {
         return Files.readString(Path.of("JipperOverlayer/version"));
     }
+
+    @GetMapping("/JipperOverlayer/Scripts.zip")
+    public String script() throws IOException {
+        return Files.readString(Path.of("JipperOverlayer/Scripts.zip"));
+    }
 }
