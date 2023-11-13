@@ -1,9 +1,9 @@
 RegisterTag("MovingManN", function (StartSizeRAW, MaxSizeRAW, SpeedRAW, SubSizeRAW, ChangeRAW, easeRAW) {
-	MaxSizeRAW = MaxSizeRAW.replace(", ", "");
-	SpeedRAW = SpeedRAW.replace(", ", "");
-	SubSizeRAW = SubSizeRAW.replace(", ", "");
-	ChangeRAW = ChangeRAW.replace(", ", "");
-	easeRAW = easeRAW.replace(", ", "");
+	MaxSizeRAW = MaxSizeRAW.replace(",", "").replace(" ", "");
+	SpeedRAW = SpeedRAW.replace(",", "").replace(" ", "");
+	SubSizeRAW = SubSizeRAW.replace(",", "").replace(" ", "");
+	ChangeRAW = ChangeRAW.replace(",", "").replace(" ", "");
+	easeRAW = easeRAW.replace(",", "").replace(" ", "");
     let Func = Combo(); let StartSize = 30; let MaxSize = 80; let Speed = 800; let SubSize = 30;
     if(isNaN(parseFloat(StartSizeRAW))==0){StartSize = StartSizeRAW;}
     if(isNaN(parseFloat(SubSizeRAW))==0){SubSize = SubSizeRAW;}

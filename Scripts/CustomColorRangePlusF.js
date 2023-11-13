@@ -1,11 +1,11 @@
 RegisterTag("CustomColorRangePlusF", function (RAWfunc, range1, range2, color1, color2, easeRAW, Fa) {
   let func = eval(RAWfunc + "(8)");
-  range1 = range1.replace(", ", "");
-  range2 = range2.replace(", ", "");
-  color1 = color1.replace(", ", "");
-  color2 = color2.replace(", ", "");
-  easeRAW = easeRAW.replace(", ", "");
-  Fa = Fa.replace(", ", "");
+  range1 = range1.replace(",", "").replace(" ","");
+  range2 = range2.replace(",", "".replace(" ",""));
+  color1 = color1.replace(",", "").replace(" ","");
+  color2 = color2.replace(",", "").replace(" ","");
+  easeRAW = easeRAW.replace(",", "").replace(" ","");
+  Fa = Fa.replace(",", "").replace(" ","");
   if (isNaN(func)==0) {
     if(Fa == 1){if( func == 100){return "FFDA00"}}
     let numValue = parseFloat(eval(func).toString());
