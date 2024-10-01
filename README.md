@@ -1,5 +1,12 @@
 # Jipper Overlayer
 ---
+### 안내 Anounce
+
+**해당 프로젝트는 종료되었으며 [JipperResourcePack](https://github.com/Jongye0l/JipperResourcePack)으로 이전되었습니다.**
+
+**다운로드를 원하시는 분들은 해당 레포지토리에서 다운로드 해주세요!**
+
+---
 ### 소개 Information
 * 지퍼님의 오버레이어 설정을 적용시키는 배치파일입니다.
 ---
